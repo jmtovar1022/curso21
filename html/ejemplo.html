@@ -1,0 +1,177 @@
+<!-- Estructura de una página Web-->
+
+<!-- Comandos importantes: 
+ctrl + k + c= comentar
+alt + shift + flecha arriba o flecha abajo: duplica 
+shift + tab: identa hacia atrás
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Ejemplo</title>
+</head>
+<body>
+    <h1>Pagina web con Html</h1>
+
+    <!-- Etiqueta de Botón:-->
+    <button> Click Aquí </button>
+
+    <!-- Etiqueta de link: 
+    <a> significa ancla
+    tiene como propiedades: 
+    href: sirve para indicar la ubicación del recurso
+    target: sirve para indicar donde se abre el recurso
+    -->
+
+    <a href="https://www.google.co.ve/?hl=es">
+         <button> Ir a Google </button>
+    </a>
+    <!-- de la manera anterior me manda en la misma pestaña a la página-->
+
+    <!-- Con el atributo target="_blank" me envía a otra pestaña-->
+    <a href="https://www.google.co.ve/?hl=es" target="_blank">
+        <button> Ir a Google 2 </button>
+
+    </a>
+   <!-- Enlace por defecto-->
+    <p> Enlace por Defecto sin Botón</p>
+    <a href="https://www.google.co.ve/?hl=es">
+        Ir a Google 3
+    </a>
+
+    <!-- lista desordenada -->
+     <!-- <ul> es una lista desordenada
+          contiene elementos <li>
+     -->
+
+     <!-- propiedad types cambia la forma de la viñeta 
+        pero mejor se debe aplicar en CSS para darle estilo-->
+     <ul type= "square"> 
+        <li> Pan </li>
+        <li> Pan </li>
+        <li> Queso </li>
+        <li> Jamon </li>
+     </ul>
+<!-- Se puede colocar etiqueta dentro de otra etiqueta -->
+
+     <ul type= "square"> 
+        <li>
+             <a href="https://es.wikipedia.org/wiki/Pan#/media/Archivo:Assorted_bread.jpg"> Pan</a>
+        </li>
+        <li> Queso </li>
+        <li> Jamon </li>
+     </ul>
+
+     <!-- Existen también las listas ordenadas, esas van enumeradas paso a paso  -->
+<!-- Se suelen utilizar para recetas, rankins, etc...  -->
+<!-- la etiqueta para una lista ordenada es: <ol></ol> -->
+<ol>
+    <li>Uno</li>
+    <li>Dos</li>
+    <li>Tres</li>
+    <li>Cuatro</li>
+</ol>
+
+<!-- Lo sisugiente a utilizar son lso divisores 
+     Su etiqueta es <div>, nos sirven para dar estructurar la página (dividirla)
+     de manera ordenada-->
+
+     <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+           Quas perspiciatis dignissimos recusandae nobis rerum quisquam,
+           maiores tempore odio facere quae asperiores nostrum facilis illum
+           sunt similique est natus unde quia!</p>
+        <p></p>
+        <p></p>
+     </div>
+
+<!-- Etiquetas Semánticas iguales al div
+<header> Encabezado o cabecera
+<main> Significa contenido Principal
+<footer> Pie de Página 
+<section> Sección de una página
+<article> artículo 
+<nav> Barra de Navegación 
+<aside> Barra lateral 
+
+
+-->
+
+<!-- Formularios 
+     Contiene elementos de input 
+     que son elementos de entrada
+     Tiene como propiedades: 
+     type: sirve aopra indicar el tipo de campo de entrada, como: 
+        text
+        password
+        email
+        number
+        date
+        radio
+        checkbox     
+-->
+<h2> FORMULARIO</h2>
+<form action="index.html"> <!-- Dirección a donde me va a dirigir al enviar el form-->
+    <p>Nombre: </p>
+    <input type="text" name="name">
+
+    <p>Contraseña</p>
+    <input type="password" name="password">
+    
+    <p> Correo Electrónico</p>
+    <input type="email" name="email">
+
+    <p> Teléfono</p>
+    <input type="number" name="age">
+
+    <p> Fecha de Nacimiento</p>
+    <input type="date" name="birthday">
+
+    <input type="submit" value="Enviar">
+    <!-- Botón de Enviar-->
+</form>
+
+<!-- Etiqueta para crear espacios  
+     Forma: <br>
+     Crea un salto de linea entre etiquetas 
+     Ejemplo
+-->
+
+<h3>TITULO</h3>
+<br><br><br>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At molestiae totam fuga cum numquam quo in eligendi, veniam eius aliquam modi? Quisquam repudiandae ex explicabo dignissimos quae rem, consequatur necessitatibus.</p>
+<br>
+<a href="www.gmail.com" target="_blank"> ir a Gmail </a>
+
+<!-- Crea espacios rellenso con una linea delgada horizontal -->
+
+<h3>Muestra una linea</h3>
+<hr><hr><hr>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At molestiae totam fuga cum numquam quo in eligendi, veniam eius aliquam modi? Quisquam repudiandae ex explicabo dignissimos quae rem, consequatur necessitatibus.</p>
+<hr>
+
+
+<!-- iframe 
+     Sirve para incorporar a la página un video de youtube
+     Puedo buscar el código en el video de youtube en "compartir"
+     luego "incorporar", copio el link y lo pego -->
+
+     <iframe 
+     width="560" 
+     height="315" 
+     src="https://www.youtube.com/embed/rPNtWxpxmZQ?si=bmX3nK4YVNluUvEY" 
+     title="YouTube video player" 
+     frameborder="0" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+     referrerpolicy="strict-origin-when-cross-origin" 
+     allowfullscreen>
+    </iframe>
+
+
+</body>
+</html>
